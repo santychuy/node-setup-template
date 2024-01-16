@@ -1,0 +1,32 @@
+{
+  "name": "node-template-santychuy",
+  "version": "1.0.0",
+  "description": "Template for a node project with the basic but solid setup",
+  "main": "dist/index.js",
+  "keywords": [],
+  "author": "Santiago Carrasco <hi@santychuy.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node --env-file .env dist/index.js",
+    "build": "tsc",
+    "dev": "tsc-watch --onSuccess \"node --env-file .env dist/index.js\"",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@types/node": "20.11.4",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "prettier": "3.2.2",
+    "semantic-release": "23.0.0",
+    "tsc-watch": "6.0.4",
+    "typescript": "5.3.3",
+    "husky": "^8.0.0"
+  }
+}

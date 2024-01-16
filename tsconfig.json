@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "NodeNext",
+    "outDir": "dist",
+    "rootDir": "./src",
+    "paths": {
+      "config/*": ["./config/*"]
+      /* ... */
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "removeComments": true,
+    "sourceMap": true
+  },
+  "include": ["src/**/*"]
+}
